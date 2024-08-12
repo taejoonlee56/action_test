@@ -18,8 +18,8 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-    - name: Print working directory
-      run: pwd
+    - name: Modify Default Path
+      run: cd ../
         
     - name: Install dependencies
       run: |
